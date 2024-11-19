@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #fdf6f9; /* Soft pinkish background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            position: relative;
+            font-family: Arial, sans-serif;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .centered img {
+            max-width: 80%; /* Adjust to screen size */
+            height: auto;
+        }
+
+        .centered p {
+            color: #ffb6c1; /* Baby pink */
+            font-size: 4vw; /* Adjust dynamically to screen size */
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 5%; /* Dynamic spacing */
+            right: 5%; /* Dynamic spacing */
+        }
+
+        .bottom-right img {
+            max-width: 20vw; /* Scales with screen size */
+            height: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            .centered p {
+                font-size: 5vw; /* Slightly smaller for smaller screens */
+            }
+            .bottom-right img {
+                max-width: 30vw; /* Scale down for smaller devices */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <img src="flower1.gif" alt="Flower GIF">
+        <p>For You, aka</p>
+    </div>
+
+    <div class="bottom-right">
+        <img src="flower2.gif" alt="Decorative GIF">
+    </div>
+</body>
+</html>
